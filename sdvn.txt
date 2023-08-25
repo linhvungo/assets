@@ -9,7 +9,7 @@ git clone https://github.com/phamhungd/sd-webui-llul /content/SDVN/extensions/B-
 git clone https://huggingface.co/phamhungd/Prunedcontrolnet /content/Basecontrolnet
 git clone https://huggingface.co/phamhungd/Basecontrolnet /content/Basecontrolnet
 ln -s /content/Basecontrolnet /content/SDVN/extensions/sd-webui-controlnet/models/
-git clone https://github.com/phamhungd/SDVN
+git clone -b release_candidate https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/SDVN
 git clone https://huggingface.co/phamhungd/Extracontrolnet /content/Extracontrolnet
 ln -s /content/Extracontrolnet /content/SDVN/extensions/sd-webui-controlnet/models/
 aria2c --console-log-level=error --summary-interval=10 --header={user_header} -c -x 16 -s 16 -k 1M  https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0_0.9vae.safetensors -d /content/SDVN/models/Stable-diffusion -o SDXL-1.0.safetensors
